@@ -9,6 +9,14 @@ def initialize(player1, player2)
   @not_turn = player2
 end
 
+def self.instance
+  @game
+end
+
+def self.create(player1, player2)
+  @game = Game.new(player1, player2)
+end
+
 def attack(player)
   player.receive_damage
   switch_turn
