@@ -1,8 +1,8 @@
 
 
 describe Game do
-let(:player1) { double(:player1) }
-let(:player2) { double(:player2) }
+let(:player1) { double(:player1, hp: 60, name: "name") }
+let(:player2) { double(:player2, hp: 60, name: "name") }
 let(:game) { Game.new(player1, player2) }
 
 describe 'game start' do

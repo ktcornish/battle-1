@@ -15,9 +15,10 @@ describe Player do
  end
 
  describe "#receive_damage" do
-   it "deducts #{Player::DEFAULT_ATTACK} HP" do
+   it "deducts a random amount of HP" do
+     srand(1)
      ross.receive_damage
-     expect(ross.hp).to eq (Player::DEFAULT_HP - Player::DEFAULT_ATTACK)
+     expect(ross.hp).to eq (Player::DEFAULT_HP - 7)
    end
  end
 end

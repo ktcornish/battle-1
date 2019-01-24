@@ -11,6 +11,8 @@ class Player
   end
 
   def receive_damage
-    @hp -= DEFAULT_ATTACK
+    # @hp -= DEFAULT_ATTACK
+    @hp -= rand(2..20)
+    @hp = 0 if @hp < 0
   end
 end

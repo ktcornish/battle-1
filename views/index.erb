@@ -1,13 +1,19 @@
-<h1>Battle!</h1>
-<h2>Sign in to play</h2>
-<form action="/names" method="post">
-  <label for ="player_1_name">
-    Player 1 Name
-  <input type="text" name="player_1_name">
-  </label>
-  <label for ="player_2_name">
-    Player 2 Name
-  <input type="text" name="player_2_name">
-  </label>
-  <input type="submit" value="Submit">
+<head>
+<link rel="stylesheet" href="/css/style.css" type="text/css" />
+</head>
+
+<div class="pyro">
+  <div class="before"></div>
+  <div class="after"></div>
+</div>
+
+  <div class="icon">BATTLE APP!</div>
+  Game Select
+
+<form action="/two_player_names" method ="get">
+  <button type="submit" value=Submit>2 Player</button>
+</form>
+
+<form action="/one_player_name" method ="get">
+  <button type="submit" value=Submit>1 Player</button>
 </form>
