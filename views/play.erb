@@ -7,6 +7,11 @@
 <%= @game.player2.name %>: <%= @game.player2.hp %>HP <br>
 </h2>
 
+<% if @game.turn.hp == 0 %>
+ <h1> <%= @game.not_turn.name %> wins </h1>
+<% else %>
 It's <%= @game.turn.name %>'s turn
-
+<form method="post">
   <a href ="/attack">Attack!</a>
+  </form>
+<% end %>

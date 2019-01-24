@@ -4,7 +4,7 @@ feature 'Player turn' do
     expect(page).to have_content "It's Dave's turn"
   end
   scenario 'shows switched player turn' do
-    sign_in_and_attack
+    sign_in_and_attack(1)
     expect(page).to have_content "It's Mittens's turn"
   end
 end
